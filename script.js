@@ -26,7 +26,7 @@ function send(action) {
       status.innerText = "❌ อยู่นอกพื้นที่ปฏิบัติหน้าที่";
       return;
     }
-    fetch("PUT_GOOGLE_APPS_SCRIPT_URL_HERE", {
+    fetch("https://script.google.com/macros/s/AKfycbxCsB4Nlh5968iKixOLa944XanxvXiczKXiI17Kui0QrLa9_ClCHv1K-RbMohFF3c8t/exec", {
       method: "POST",
       body: JSON.stringify({
         empid: empid.value,
